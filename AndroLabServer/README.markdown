@@ -22,8 +22,8 @@ Running the python server
 -----
 Create image from Dockerfile
   
-docker build -t <IMAGE-NAME> .
+docker build -t IMAGE-NAME .
 
 Run your container
   
-docker run -it -d -p8888:8888 --name <CONTAINER-NAME> <IMAGE-NAME>
+docker run -it -d -p8888:8888 --name CONTAINER-NAME IMAGE-NAME
