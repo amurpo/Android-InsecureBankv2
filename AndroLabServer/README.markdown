@@ -20,14 +20,8 @@ pip install -r requirements.txt
 
 Running the python server
 -----
-Make sure you have python2 installed. Change the current directory to the AndroLabServer folder
+Create image from Dockerfile
+docker build -t <IMAGE-NAME> .
 
-	cd AndroLabServer
-
-Use the below syntax to run the HTTP server
-
-	python app.py
-
-Use the below syntax to view the possible arguments
-
-	python app.py --help
+Run your container
+docker run -it -d -p8888:8888 --name <CONTAINER-NAME> <IMAGE-NAME>
